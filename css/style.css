@@ -40,10 +40,13 @@ kbd{
   transform: scale(1.1);
   border-color:#43fbe0;
   box-shadow: 0 0 1rem #43fbe0;
-/*  animation: shake 0.5s;*/
 }
 
-/*@keyframes shake {
+/*.shake{
+  animation: shake 0.2s;
+}
+
+@keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
   20% { transform: translate(-3px, 0px) rotate(1deg); }
