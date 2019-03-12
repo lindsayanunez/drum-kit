@@ -3,7 +3,7 @@
 ### Javascript Drum Kit
 
 ## Description
-This is a simple app that uses simple vanilla javascript to immulate a drum kit.
+This is a simple app that uses vanilla javascript to immulate a drum kit.
 
 ## How to Launch the App
 - Option 1: Download or clone this repo to your machine and launch the index file in your browser.
