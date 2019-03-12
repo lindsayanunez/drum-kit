@@ -5,6 +5,7 @@ function playDrum(e){
   const audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`);
 
   if(!key){return};
+  audio.currentTime = 0;
   audio.play();
 }
 
