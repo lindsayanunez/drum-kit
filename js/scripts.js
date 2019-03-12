@@ -4,11 +4,19 @@ function playDrum(e){
   const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`);
   const audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`);
 
-  if(!key){return};
-  key.classList.add('beat');
+  if(!audio){return};
   audio.currentTime = 0;
   audio.play();
+  key.classList.add('beat');
 }
 
+function removeTransition(e){
+  if(e.propertyName !== 'transform') return;
+  this.classList.remove('beat');
+}
+
+
+const keys = document.querySelectorAll('.key');
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
 window.addEventListener('keydown', playDrum);
